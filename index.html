@@ -2,281 +2,259 @@
 
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <style>
-      body {
-        background-color: black;
-        padding: 90px;
-      }
-      p {
-        text-align: justify;
-        font-size: medium;
-        font-family: Roboto;
-        color: white;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-
-      h1 {
-        text-align: center;
-        font-family: Roboto;
-        color: white;
-      }
-
-      h2 {
-        text-align: center;
-        font-family: Roboto;
-        color: yellow;
-    
-      }
-
-      img {
-        display: block;
-        margin: 0px auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 50%;
-      }
-
-      video {
-        width: 100%;
-      }
-
-      #formul {
-        font-family: Roboto;
-      }
-
-      #topo {
-        position: absolute;
-        top: 0;
-      }
-
-      
-      #menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 90px;
-        background-color: yellow;
-        font-size: 25px;
-        font-family: roboto;
-        z-index: 2;
-      }
-
-      #linha {
-        height: 90px; /*Altura da linha*/
-        border-left: 2px solid; /* Adiciona borda esquerda na div como ser fosse uma linha.*/
-        border-right: 2px solid;
-      }
-
-      input {
-        border-radius: 4px;
-      }
-
-      ul {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        margin: 0;
-      }
-
-      li {
-        margin-right: 10px;
-      }
-
-      a {
-        color: white;
-        text-decoration: none;
-        font-family: Roboto;
-      }
-    </style>
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Linguagens De Programação</title>
   </head>
   <body>
+    <nav class="box">
+      <div id="topo"></div>
 
-    <div id="topo"></div>
-    
-   
-    <h1> <img src="img/ling.png" alt="LinguagensDeProgramação" style="border-radius: 10px; width: 40%;"> </h1>
+      <div id="menu">
+        <ul style="margin-left: 30px">
 
-    <hr>
+          <li>
+            <a style="color: black" href="#topo">Início</a>
+          </li>
+          <li>|</li>
 
-    <div id="menu">
-      <ul style="margin-left:30px ;" >
-        <li>
-          <a style="color: black" href="#topo">Início</a>
-        </li>
-        <li>|</li>
-       
-        <li>
-          <a style="color: black;" href="#desc"> O que é?</a>
-        </li>
-        <li>|</li>
-        <li>
-          <a style="color: black" href="#js">JavaScript</a>
-        </li>
+          <li>
+            <a style="color: black" href="#desc"> O que é?</a>
+          </li>
+          <li>|</li>
+          <li>
+            <a style="color: black" href="#js">JavaScript</a>
+          </li>
 
-        <li>|</li>
-        <li>
-          <a style="color: black" href="#py">Python</a>
-        </li>
-        <li>|</li>
-        <li>
-          <a style="color: black;" href="#curiosidades">Curiosidades</a>
-        </li>
-        <li>|</li>
-        <li style="margin-left:500px;">
-          <form action="http://www.example.com/cgi/subscribe/" method="post">
-            <div id="formul">
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" >
-      
-              <label for="email">E-mail:</label>
-              <input type="text" id="email" >
-      
-              <input type="submit" value="Enviar" >
-            </div>
-          </form>
-      
-        </li>
-      </ul>
-    </div>
+          <li>|</li>
+          <li>
+            <a style="color: black" href="#py">Python</a>
+          </li>
+          <li>|</li>
+          <li>
+            <a style="color: black" href="#curiosidades">Curiosidades</a>
+          </li>
+          <li>|</li>
+          <li style="margin-left: 500px">
+           
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" />
 
-    <div id="desc"></div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" />
 
+               <button type="button">Enviar</button>
+              
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="box">
+      <h1>
+        <img
+          src="img/ling.png"
+          alt="LinguagensDeProgramação"
+          style="border-radius: 10px; width: 40%"
+        />
+      </h1>
+
+      <hr />
+    </header>
+
+    <section class="box">
+
+    <article>
     <h2>O que é linguagem de programação?</h2>
-    <p>
-      Linguagem de Programação é uma linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar programas (software). Um software pode ser desenvolvido para rodar em um computador, dispositivo móvel ou em qualquer equipamento que permita sua execução. Existem várias linguagens e elas servem para muitos propósitos. Alguns óbvios, como criar um software, outros menos, como controlar um carro ou uma torradeira.
-    </p>
-    <p>
-      Um app que roda no seu celular é um tipo de software criado com uma linguagem de programação. Um game, que roda em um PC ou em outros equipamentos, também. Uma TV smart, que possui a funcionalidade de se conectar na internet e permitir ao consumidor usar um navegador, usa linguagens de programação tanto no hardware quanto no software.
-    </p>
 
-    <div id="js"></div>
-    <hr>
-    <h2 >JavaScript</h2>
+    
 
-    <p>
-       JavaScript é uma linguagem de programação de alto nível criada, a
-      princípio, para ser executada em navegadores e manipular comportamentos de
-      páginas web. 
-    </p>
-    <p>
-      Segundo a Mozilla Foundation, atual nome da antiga Netscape
-      Communications Corporations, empresa responsável pela criação do JS,
-      "JavaScript é uma linguagem de programação, leve, interpretada, orientada
-      a objetos, baseada em protótipos e em first-class functions (funções de
-      primeira classe), mais conhecida como a linguagem de script da Internet."
-      Com seus scripts é possível incluir, em uma página estática, elementos
-      dinâmicos como mapas, formulários, operações numéricas, animações,
-      infográficos interativos e muito mais. O JavaScript é uma das mais
-      importantes tecnologias voltadas para o front-end e, unindo-se ao trio
-      HTML, CSS e PHP, formam um grupo de linguagens que abrangem praticamente
-      todas as exigências do desenvolvimento de uma página completa, dinâmica e
-      com boa performance.  
-    </p>
       <p>
-      Do final dos anos 90 até meados dos anos 2000, o JS
-      ganhou grande popularidade ao ser utilizado por grandes empresas para a
-      construção de seus sites, como o Facebook, por exemplo. Alguns exemplos de
-      sites que utilizam JS em seu front e back-end hoje em dia são Ebay,
-      LinkedIn e Yahoo.
+        Linguagem de Programação é uma linguagem escrita e formal que especifica
+        um conjunto de instruções e regras usadas para gerar programas
+        (software). Um software pode ser desenvolvido para rodar em um
+        computador, dispositivo móvel ou em qualquer equipamento que permita sua
+        execução. Existem várias linguagens e elas servem para muitos
+        propósitos. Alguns óbvios, como criar um software, outros menos, como
+        controlar um carro ou uma torradeira.
       </p>
+
+    
+      
+
       <p>
-      Mas o JS não se restringe mais apenas às páginas e aos
-      navegadores, como foi durante vários anos: com o advento de diversos
-      frameworks, APIs, melhorias e criação de centenas de funções, hoje já é
-      possível utilizar JavaScript em aplicativos mobile, softwares para desktop
-      e até mesmo em back-end.
+        Um app que roda no seu celular é um tipo de software criado com uma
+        linguagem de programação. Um game, que roda em um PC ou em outros
+        equipamentos, também. Uma TV smart, que possui a funcionalidade de se
+        conectar na internet e permitir ao consumidor usar um navegador, usa
+        linguagens de programação tanto no hardware quanto no software.
+      </p>
+
+    
+
+      <div id="js"></div>
+      <hr />
+    </article>
+    <article>
+      <h2>JavaScript</h2>
+
+      <p>
+        JavaScript é uma linguagem de programação de alto nível criada, a
+        princípio, para ser executada em navegadores e manipular comportamentos
+        de páginas web.
+      </p>
+
+   
+
+      <p>
+        Segundo a Mozilla Foundation, atual nome da antiga Netscape
+        Communications Corporations, empresa responsável pela criação do JS,
+        "JavaScript é uma linguagem de programação, leve, interpretada,
+        orientada a objetos, baseada em protótipos e em first-class functions
+        (funções de primeira classe), mais conhecida como a linguagem de script
+        da Internet." Com seus scripts é possível incluir, em uma página
+        estática, elementos dinâmicos como mapas, formulários, operações
+        numéricas, animações, infográficos interativos e muito mais. O
+        JavaScript é uma das mais importantes tecnologias voltadas para o
+        front-end e, unindo-se ao trio HTML, CSS e PHP, formam um grupo de
+        linguagens que abrangem praticamente todas as exigências do
+        desenvolvimento de uma página completa, dinâmica e com boa performance.
+      </p>
+
+    
+
+      <p>
+        Do final dos anos 90 até meados dos anos 2000, o JS ganhou grande
+        popularidade ao ser utilizado por grandes empresas para a construção de
+        seus sites, como o Facebook, por exemplo. Alguns exemplos de sites que
+        utilizam JS em seu front e back-end hoje em dia são Ebay, LinkedIn e
+        Yahoo.
+      </p>
+
+   
+
+      <p>
+        Mas o JS não se restringe mais apenas às páginas e aos navegadores, como
+        foi durante vários anos: com o advento de diversos frameworks, APIs,
+        melhorias e criação de centenas de funções, hoje já é possível utilizar
+        JavaScript em aplicativos mobile, softwares para desktop e até mesmo em
+        back-end.
+      </p>
+
+    
+      <div
+        style="
+          display: block;
+          margin: 0px auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          width: 50%;
+        "
+      >
+        <hr/>
+
+        <video controls poster="img/js.jpg">
+          <source src="videos/js-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+   
+
+      <p>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1"
+          >Link Para a Playlist De JavaScript</a
+        >
+      </p>
+
+    
+
+      <div id="py"></div>
+    </article>
+
+    <article> <h2>Python</h2> 
+
+    
+      <p>
+
+        Python é uma linguagem de programação de alto nível — ou High Level
+        Language —, dinâmica, interpretada, modular, multiplataforma e orientada
+        a objetos — uma forma específica de organizar softwares onde, a grosso
+        modo, os procedimentos estão submetidos às classes, o que possibilita
+        maior controle e estabilidade de códigos para projetos de grandes
+        proporções.
+      </p>
+
+    
+      <p>
+
+        Por ser uma linguagem de sintaxe relativamente simples e de fácil
+        compreensão, ganhou popularidade entre profissionais da indústria
+        tecnológica que não são especificamente programadores, como engenheiros,
+        matemáticos, cientistas de dados, pesquisadores e outros. Um de seus
+        maiores atrativos é possuir um grande número de bibliotecas, nativas e
+        de terceiros, tornando-a muito difundida e útil em uma grande variedade
+        de setores dentro de desenvolvimento web, e também em áreas como análise
+        de dados, machine learning e IA.
+      </p>
+
+    
+      <div></div>
+
+      <div
+        style="
+          display: block;
+          margin: 0px auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          width: 50%;
+        "
+      >
+        <hr />
+
+        <video controls poster="img/py.jpg">
+          <source src="videos/py-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+    
+      <p>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6"
+          >Link Para a Playlist De Python</a
+        >
       </p>
     
 
-    <div
-      style="
-        display: block;
-        margin: 0px auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 50%;
-      "
-    >
-      <hr >
+      <div id="curiosidades"></div>
+    </article>
+    </section>
 
-      <video controls poster="img/js.jpg">
-        <source src="videos/js-video.mp4" type="video/mp4" >
-      </video>
-    </div>
+    <aside class="box">
+      <h2>Curiosidades</h2>
 
-    <p>
-      <a
-        target="_blank"
-        href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1"
-        >Link Para a Playlist De JavaScript</a
-      >
-    </p>
+      <p>
+        1. Programação é pesquisa Um estudo da IEEE.org concluiu que um
+        programador passa uma boa fatia do seu tempo executando pesquisas em
+        códigos. Em média, 30% do tempo dos programadores estudados era
+        investido em pesquisar e levantar dados dos códigos com os quais estavam
+        trabalhando.
+      </p>
 
-    <div id="py"></div>
+      <p>
+        2. Poliglotas. Todo programador é um poliglota. Isso não é uma surpresa,
+        já que os códigos com os quais trabalham todos os dias são, na verdade,
+        meios de comunicar às máquinas comandos necessários para seu
+        funcionamento. O incrível é que, embora programadores conheçam, em
+        média, de 30 a 50 linguagens de programação, estima-se que mais de 1500
+        linguagens já tenham sido desenvolvidas; destas, 3 são oficialmente
+        brasileiras.
+      </p>
+    </aside>
 
-    <h2 >Python</h2>
-
-    <p>
-      Python é uma linguagem de programação de alto nível — ou High Level
-      Language —, dinâmica, interpretada, modular, multiplataforma e orientada a
-      objetos — uma forma específica de organizar softwares onde, a grosso modo,
-      os procedimentos estão submetidos às classes, o que possibilita maior
-      controle e estabilidade de códigos para projetos de grandes proporções.
-    </p>
-    <p>
-      Por ser uma linguagem de sintaxe relativamente simples e de fácil
-      compreensão, ganhou popularidade entre profissionais da indústria
-      tecnológica que não são especificamente programadores, como engenheiros,
-      matemáticos, cientistas de dados, pesquisadores e outros. Um de seus
-      maiores atrativos é possuir um grande número de bibliotecas, nativas e de
-      terceiros, tornando-a muito difundida e útil em uma grande variedade de
-      setores dentro de desenvolvimento web, e também em áreas como análise de
-      dados, machine learning e IA.
-    </p>
-    <div></div>
-
-    <div
-      style="
-        display: block;
-        margin: 0px auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 50%;
-      "
-    >
-      <hr >
-
-      <video controls poster="img/py.jpg">
-        <source src="videos/py-video.mp4" type="video/mp4" >
-      </video>
-    </div>
-
-    <p>
-      <a
-        target="_blank"
-        href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6"
-        >Link Para a Playlist De Python</a
-      >
-    </p>
-
-    <div id="curiosidades"></div>
-
-<h2>Curiosidades</h2>
-
-<p>
-1. Programação é pesquisa Um estudo da IEEE.org concluiu que um programador passa uma boa fatia do seu tempo executando pesquisas em códigos. Em média, 30% do tempo dos programadores estudados era investido em pesquisar e levantar dados dos códigos com os quais estavam trabalhando.
-</p>
-
-<p>
-2. Poliglotas. Todo programador é um poliglota. Isso não é uma surpresa, já que os códigos com os quais trabalham todos os dias são, na verdade, meios de comunicar às máquinas comandos necessários para seu funcionamento. O incrível é que, embora programadores conheçam, em média, de 30 a 50 linguagens de programação, estima-se que mais de 1500 linguagens já tenham sido desenvolvidas; destas, 3 são oficialmente brasileiras.
-</p>
+    <footer></footer>
   </body>
 </html>
